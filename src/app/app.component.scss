@@ -1,26 +1,45 @@
-.whatsapp-float {
+/* Container para os dois ícones lado a lado */
+.float-container {
   position: fixed;
-  width: 60px;
-  height: 60px;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: white;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Estilo base compartilhado */
+.float-button {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   text-align: center;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.2s ease;
 }
 
-.whatsapp-float:hover {
+/* Animação de hover para os dois */
+.float-button:hover {
   transform: scale(1.1);
 }
 
-.whatsapp-float img {
+/* WhatsApp */
+.whatsapp-float {
+  background-color: #25D366;
+  color: white;
+}
+
+/* Instagram */
+.instagram-float {
+  background-color: #E1306C; /* rosa/roxo do Instagram */
+  color: white;
+}
+
+/* Imagens */
+.float-button img {
   width: 30px;
   height: 30px;
 }

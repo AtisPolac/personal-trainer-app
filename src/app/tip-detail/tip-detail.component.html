@@ -1,0 +1,14 @@
+<section class="tip-detail-section">
+  <div class="container">
+    <button class="back-button" (click)="goBack()">← Voltar</button>
+    <div *ngIf="tip; else notFound">
+      <h1>{{ tip.title }}</h1>
+      <p class="category">{{ tip.category === 'nutrition' ? 'Nutrição' : 'Exercício' }}</p>
+      <div class="content" [innerHTML]="getFormattedContent(tip.content)"></div>
+    </div>
+    <ng-template #notFound>
+      <h1>Dica não encontrada</h1>
+      <p>Desculpe, não encontramos a dica que você está procurando.</p>
+    </ng-template>
+  </div>
+</section>

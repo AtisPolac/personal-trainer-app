@@ -1,0 +1,12 @@
+<section class="tips-section">
+  <div class="container">
+    <h1>Dicas de Saúde e Fitness</h1>
+    <div class="tips-grid">
+      <div *ngFor="let tip of tips" class="tip-card" (click)="goToTip(tip.id)">
+        <h2>{{ tip.title }}</h2>
+        <p class="category">{{ tip.category === 'nutrition' ? 'Nutrição' : 'Exercício' }}</p>
+        <p>{{ tip.summary }}</p>
+      </div>
+    </div>
+  </div>
+</section>

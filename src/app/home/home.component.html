@@ -1,0 +1,62 @@
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>TRANSFORME SEU CORPO COM <span>GABRIEL MACHADO</span></h1>
+        <p>Personal trainer certificado com mais de 10 anos de experiência, oferecendo treinos personalizados e planos de nutrição para alcançar seus objetivos de fitness.</p>
+        <a href="#services" class="cta-button">Descubra Nossos Serviços</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/biel.png" alt="Gabriel Machado">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section" id="services">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Treinos Personalizados</h3>
+        <p>Programas sob medida para iniciantes e avançados, focados em força, resistência e flexibilidade.</p>
+      </div>
+      <div class="service-card">
+        <h3>Nutrição Esportiva</h3>
+        <p>Planos alimentares balanceados para maximizar resultados, com opções acessíveis e saudáveis.</p>
+      </div>
+      <div class="service-card">
+        <h3>Planos Online</h3>
+        <p>Acompanhe seus treinos e dieta de qualquer lugar com suporte personalizado via app.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section" id="stats-section">
+  <div class="container">
+    <h2>Nossos Resultados</h2>
+    <div class="stats-grid">
+      <div *ngFor="let stat of stats; let i = index" class="stat-card">
+        <span class="stat-value">{{ currentValues[i] }}</span>
+        <p class="stat-label">{{ stat.label }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <h2>Depoimentos</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Gabriel mudou minha vida! Em 6 meses, perdi 15kg com treinos e dieta personalizados."</p>
+        <span>- Ana Silva</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Ótimo acompanhamento online, resultados incríveis em apenas 3 meses!"</p>
+        <span>- João Pedro</span>
+      </div>
+    </div>
+  </div>
+</section>

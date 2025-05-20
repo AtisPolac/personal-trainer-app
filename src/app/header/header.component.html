@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo Gabriel Machado" />
+      <a routerLink="/">Gabriel Machado</a>
+    </div>
+    <nav class="nav">
+      <button class="hamburger" (click)="toggleMenu()">&#9776;</button>
+      <ul [class.show]="isMenuOpen">
+        <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/about" (click)="closeMenu()">Sobre</a></li>
+        <li><a routerLink="/tips" (click)="closeMenu()">Dicas</a></li>
+        <li><a routerLink="/contact" (click)="closeMenu()">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
